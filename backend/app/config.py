@@ -1,6 +1,6 @@
 from pathlib import Path
 
-DIR_PATH = Path.cwd().parent.parent
+DIR_PATH = BASE_DIR = Path(__file__).resolve().parents[2]
 BACK_PATH = DIR_PATH / "backend"
-DATA_PATH = BACK_PATH / "data"
+DATA_PATH = DIR_PATH / "data"
 DB_PATH = DATA_PATH / "app.db"
