@@ -9,5 +9,4 @@ class Albums(Base):
     id: Mapped[int] = mapped_column(primary_key=True)
     title: Mapped[str] = mapped_column(nullable=False)
     artist_id: Mapped[int] = mapped_column(ForeignKey('artists.id'),nullable=False)
-    year: Mapped[Date] = mapped_column(Date)
     image_path: Mapped[str] = mapped_column(nullable=True)
